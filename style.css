@@ -9,8 +9,8 @@ header {
 
 body {
     background-image: url(capybara.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-repeat: repeat;
+    background-size: 100%;
     background-size: cover;
 }
 
@@ -43,7 +43,7 @@ body {
     margin-top: 50px;
     margin-left: 300px;
     opacity: 0.9;
-}    
+}
 .button:hover,
 .button:focus {
   background-color: #f1ba8f;
@@ -91,4 +91,32 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width: 840px) {
+    .button {
+        margin-left: 300px;
+    }
+
+    .button1 {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .button {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 490px) {
+    .button {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 390px) {
+    .button {
+        margin-left: 20px;
+    }
 }
